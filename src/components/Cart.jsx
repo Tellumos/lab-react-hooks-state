@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const Cart = () => {
+function Cart({ currentItems }) {
+  
   return (
     <div>
       <h2>Shopping Cart</h2>
       <ul>
-        {/* TODO: Include items here in li tags with text 'ITEM.NAME is in your cart.' */}
+        {currentItems.map((item, index) => (
+          <li key={index}>{item} is in your cart.</li>
+        ))}
       </ul>
     </div>
   )

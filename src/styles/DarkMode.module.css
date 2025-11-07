@@ -1,3 +1,6 @@
-/* TODO (optional): Define styles for dark mode */
+.body {
+    color-scheme: light dark;
+    
+}
 
 /* TODO (optional): Ensure text and background colors adjust for dark mode */
